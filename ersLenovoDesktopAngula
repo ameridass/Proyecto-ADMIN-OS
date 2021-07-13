@@ -1,0 +1,33 @@
+[33mcommit befb8437cb205c74be1069c2dc3985ffe5c0083c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: unknown <boxeo2001campeona@gmail.com>
+Date:   Mon Jul 12 19:16:39 2021 -0600
+
+    commit
+
+[33mcommit 5d0e13b7ea2fc306c679681770becadb58559388[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Josue Alejandro Noriega Letran <alexelectricz@gmail.com>
+Date:   Thu Jul 8 23:01:10 2021 -0600
+
+    Create imagen.jpg
+    
+    se añade imagen de fondo
+
+[33mcommit 4131025fa3650b37997787777513b7d899fa5311[m
+Author: Josue Alejandro Noriega Letran <alexelectricz@gmail.com>
+Date:   Thu Jul 8 22:56:18 2021 -0600
+
+    Creacion de login
+    
+    se agrega el login y la hoja de estilos
+
+[33mcommit cfc00c7b85ecefe33601c1c39f6260719ae1cc98[m
+Author: servidor-jn <aso@correo.com>
+Date:   Thu Jul 8 02:49:25 2021 +0000
+
+    carga inicial del proyecto front de angular jn
+
+[33mcommit 63ea0325e52645f664af7a7fa3eef3231ae72965[m
+Author: ameridass <ameridas1998@gmail.com>
+Date:   Mon Jul 5 20:57:28 2021 -0600
+
+    Asignacion de tareas en TXT
