@@ -1,22 +1,44 @@
 <body>
-    <form class="formulario">
+    <form class="formulario" [formGroup]="registerForm" (ngSubmit)="registerOn(registerForm.value)">
        <h1>Registrate</h1>
         <div class="contenedor">
         <div class="input-contenedor">
             <i class="fas fa-user icon"></i>
-            <input type="text" placeholder="Nombre de Usuario">
+            <input type="text" placeholder="Primer Nombre" formControlName="nombre1">
             </div>
             <div class="input-contenedor">
             <i class="fas fa-envelope icon"></i>
-            <input type="text" placeholder="Correo Electronico">
+            <input type="text" placeholder="Segundo nombre" formControlName="nombre2">
             </div>
             <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" placeholder="Primer Apellido" formControlName="apellido1">
+                </div>
+                <div class="input-contenedor">
+                    <i class="fas fa-envelope icon"></i>
+                    <input type="text" placeholder="Segundo Apellido" formControlName="apellido2">
+                    </div>
+                    <div class="input-contenedor">
+                        <i class="fas fa-envelope icon"></i>
+                        <input type="text" placeholder="usuario" formControlName="username">
+                        </div>
+            <div class="input-contenedor">
            <i class="fas fa-key icon"></i>
-            <input type="password" placeholder="Contraseña">
-            
+            <input type="password" placeholder="Contraseña" formControlName="pass">
             </div>
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" placeholder="Correo" formControlName="email">
+                </div>
+                <div class="input-contenedor">
+                    <i class="fas fa-envelope icon"></i>
+                    <input type="text" placeholder="Fecha de nacimiento" formControlName="efechac">
+                    </div>
+                    <div class="input-contenedor">
+                        <i class="fas fa-envelope icon"></i>
+                        <input type="text" placeholder="Fecha de creacion" formControlName="fechamod">
+                        </div>
             <input type="submit" value="Registrate" class="button">
-            
             <p><a routerLink="/login">Iniciar Sesión </a></p>
         </div>
        </form>

@@ -1,20 +1,23 @@
-  <body>
-    <form class="formulario">
-    <h1>Login</h1>
-     <div class="contenedor">    
-         <div class="input-contenedor">
-         <i class="fas fa-envelope icon"></i>
-         <input type="text" placeholder="Correo Electronico" class="fondo">   
-         </div>
-         <div class="input-contenedor">
-        <i class="fas fa-key icon"></i>
-         <input type="password" placeholder="Contraseña">
-         </div>
-         <input type="submit" value="Login" class="button">
-           <!--  <button (click)="login()">login</button> -->
-         <p>¿Aún no tienes cuenta? </p>
-         <p>Crea tu cuenta</p>
-        <p><a routerLink="/nuevo">Registrate </a></p>
-     </div>
-    </form>
-</body> 
+<body>
+  <form class="formulario" [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+  <h1>Login</h1>
+   <div class="contenedor">    
+       <div class="input-contenedor">
+       <i class="fas fa-envelope icon"></i>
+       <input type="text" placeholder="Correo Electronico" class="fondo" formControlName="user">   
+       </div>
+       <div class="input-contenedor">
+      <i class="fas fa-key icon"></i>
+       <input type="password" placeholder="Contraseña" formControlName="pass">
+       </div>
+       <input type="submit" value="Login" class="button">
+       <!--<button class="button" (click)="login()">login</button>-->
+       <p>¿Aún no tienes cuenta? </p>
+       <p>Crea tu cuenta</p>
+      <p><a routerLink="/nuevo">Registrate </a></p>
+       <div class="alert alert-success " *ngIf="errosStatus">
+          <p>{{errorMsj}}</p>
+       </div>
+  </div>
+  </form>
+</body>
